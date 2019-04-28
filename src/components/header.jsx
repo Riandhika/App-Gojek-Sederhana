@@ -63,6 +63,9 @@ export default class Header extends Component {
           </NavbarBrand>
           
         </Navbar>
+        <div class="fixed-bottom" align="center">
+                By: Riandhika
+        </div>
       
       
         {/* <Navbar>
