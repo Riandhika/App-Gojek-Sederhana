@@ -66,9 +66,9 @@ export default class Counter extends Component {
               </h3>
               <div>
                 <Navbar>
-                    <Button onClick={()=>this.nambah(id)} className = "btn btn-success m-2">+</Button>{' '}
-                    <h2 align="center">{this.state.qty}</h2>
                     <Button onClick={()=>this.ngurang(id)} className = "btn btn-danger m-2">-</Button>{' '}
+                    <h2 align="center">{this.state.qty}</h2>
+                    <Button onClick={()=>this.nambah(id)} className = "btn btn-success m-2">+</Button>{' '}
                 </Navbar>
               </div>
       </div>
