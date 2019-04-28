@@ -5,7 +5,7 @@ import Pembayaran from '../../components/pembayaran';
 export default class Daftar extends Component {
   render() {
     return (
-      <div>
+      <div color="#DAF7A6">
           <Header />
           <Pembayaran />
       </div>

@@ -1,0 +1,8 @@
+.sticky {
+    position: absolute;
+    bottom: 0; right: 0;
+    background-color: red;
+    padding: 0 5px;
+    width: 200px;
+    text-align: center;
+  }

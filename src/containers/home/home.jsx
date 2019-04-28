@@ -5,7 +5,7 @@ import Tampilan from '../../components/tampilan';
 export default class Home extends Component {
   render() {
     return (
-      <div>
+      <div color="#DAF7A6">
           <Header name="Home" />
           <Tampilan />
       </div>

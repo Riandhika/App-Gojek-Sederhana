@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Container ,Row, Col, Card } from "reactstrap";
 import { Jumbotron, Button} from 'reactstrap';
 import { ListGroup, ListGroupItem } from 'reactstrap';
-import Counter from './counter'
+import Body from './body'
 import {Link} from "react-router-dom";
 
 export default class Resto extends Component {
@@ -10,8 +10,8 @@ export default class Resto extends Component {
         menu:[
             {
               id: "1",
-              gambar: "http://www.qraved.com/journal/wp-content/uploads/2015/07/gama-seafood-ikan-bakar.jpg" ,
-              nama:"Restoran Ikan Bakar dan Seafood"
+              gambar: "http://4.bp.blogspot.com/-mVaGpFa2_-E/VDPk_PZ2rAI/AAAAAAAACD0/gwXTJHbGiSk/s1600/Thailand%2Bextreme%2Bfood%3B%2Bfried%2Binsects.JPG" ,
+              nama:"Restoran kuliner ekstrim dan Seafood"
             },
 
             {
@@ -19,7 +19,7 @@ export default class Resto extends Component {
               gambar: "https://s.republika.co.id/uploads/images/inpicture_slide/warung-makan-ilustrasi-_150618081940-381.jpg",
               nama:"Warung Makan Mbahmu"
           },
-          {
+          { 
             id: "3", 
               gambar: "https://s.republika.co.id/uploads/images/inpicture_slide/warung-makan-ilustrasi-_150618081940-381.jpg",
               nama:"Warung Makan Mbahmu"
@@ -38,11 +38,16 @@ export default class Resto extends Component {
         <Card>
         <Row>
         {this.state.menu.map(item=>(
-            <Col xs="6" md="6" lg="4"width="50%" height="50%" href="/restaurant" >
+            <Col  lg="4"width="50%" height="50%" href="/restaurant" >
+              <Card>
+              <p align="center">{item.nama}</p>
               <a href="/daftar">
-              <Counter gambar={item.gambar} nama={item.nama}  />
-              <Button tag={Link} to="./daftar" color="success" size="lg" block>Order</Button>
+              <Body gambar={item.gambar}  />
+              
+              {/* <Button tag={Link} to="./daftar" color="success" size="lg" block>Order</Button> */}
               </a>
+              
+              </Card>
             </Col>
         ))}  
         </Row>
